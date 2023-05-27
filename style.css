@@ -22,6 +22,8 @@
       background-color: var(--Verydark-blue_mainBackground);
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   body main {
@@ -124,17 +126,26 @@
       width: 100%;
   }
 
+  body footer {
+      text-align: center;
+  }
+
+  body footer a {
+      text-decoration: none;
+  }
+
   @media screen and (min-width:768px) {
 
       body {
           height: 100vh;
-          align-items: center;
+          /* align-items: center; */
+          margin: 0 2rem;
       }
 
       body main {
           flex-direction: row-reverse;
           width: 100%;
-          /* margin: 0; */
+          margin: 2rem;
       }
 
       body main picture>* {
@@ -149,6 +160,6 @@
           border-bottom-right-radius: 0px;
           border-bottom-left-radius: 5px;
           border-top-left-radius: 5px;
-          width: 100%;
+          width: 75%;
       }
   }
